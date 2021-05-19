@@ -1,0 +1,4 @@
+cd 学习笔记
+git add .
+git commit -m "kenxin's auto save"
+git push -u neworigin main
