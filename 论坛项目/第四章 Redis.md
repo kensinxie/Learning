@@ -127,7 +127,7 @@ smembers test:teachers
 
 给每一个元素附加了 分数，按照分数从小到大排序（第0，第1）
 
-```
+```bash
 创建有序集合test:students 其中aaa元素的分数为10（第0名，由小到大排序）
 zadd test:students 10 aaa 20 bbb 30 ccc 40 ddd 50 eee
 
@@ -142,6 +142,9 @@ zrank test:students ccc
 
 分数排序为【0-2】的
 zrange test:students 0 2 
+
+分数在0-20之间的同学，同时显示score
+zrangebyscore test:students 0 20 withscores
 ```
 
 
